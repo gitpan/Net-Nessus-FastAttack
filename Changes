@@ -1,0 +1,6 @@
+Revision history for Perl extension Net::Nessus::FastAttack.
+
+0.01  Wed Dec 17 16:30:58 2003
+	- original version; created by h2xs 1.23 with options
+		-AXc -n Net::Nessus::FastAttack
+

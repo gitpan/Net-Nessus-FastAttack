@@ -1,0 +1,56 @@
+Net-Nessus-FastAttack version 0.01
+==================================
+
+This module is designed to perform a quick nessus attack on a given host.
+The target system for this is NetReg and self scan type CGI applications.
+
+Nessus was chosen because (it is hoped) plugins can be chosen by our 
+security group and implemented by us with no coding changes.
+
+So far we've been testing this successfully for several weeks now.
+It's been tested on Solaris running Apache/Apacah2 mod_perl with no problems.
+
+Our topology consists of a single netreg system and 2 load balanced nessusd servers.
+I'm running nessusd (Nessus) 2.0.9 for SunOS which talks NTP 1.2.
+
+As many folks might know older protocol versions sent you all plugin and
+preferences at login time.
+This could take several minutes.
+NTP 1.2 comes with (undocumented) <fast login>, this make cgi applications 
+possible.
+
+
+I'll attempt to address any problems or suggestions about this module.
+You can contact me directly or via this list.
+
+If I get enough feedback I'l post this to CPAN
+
+jpb@brown.edu
+
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+  blah blah blah
+
+COPYRIGHT AND LICENCE
+
+Put the correct copyright and licence information here.
+
+Copyright (C) 2003 by A. U. Thor
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.0 or,
+at your option, any later version of Perl 5 you may have available.
+
+
